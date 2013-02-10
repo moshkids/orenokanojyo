@@ -41,39 +41,26 @@
 
         <div class="container-fluid">
             <div class="row-fluid">
-                <div class="span12">
-                    <button id="new_girlfriend" class="btn btn-large btn-block btn-primary" type="button">好きな子を登録</button>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span12">
-                    <table class="table table-bordered">
-                        <colgroup>
-                            <col class="span1" >
-                            <col class="span7" >
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>名前</th>
-                                <th>顔</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>よしこ</td>
-                                <td>b</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <form>
+                  <fieldset>
+                    <legend>大好きなあの子を登録</legend>
+                    <label>あの子の名前</label>
+                    <input type="text" placeholder="おなまえ...">
+                    <span class="help-block">入力した後に声に出して言ってみると良い。</span>
+                    <label class="checkbox">
+                      <input type="checkbox"> 本気ですか？
+                    </label>
+                    <button type="submit" class="btn">Submit</button>
+                  </fieldset>
+                </form>                    
             </div>
         </div>
         <script type="text/javascript" src="cordova-2.4.0.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/application.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            // app.initialize();
+            app.initialize();
         </script>
     </body>
 </html>

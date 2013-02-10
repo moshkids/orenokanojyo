@@ -47,3 +47,15 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+$(function(){
+    $('#new_girlfriend').click(function(){
+        location.href="./new_gf.html";
+    });
+});
+
+
+
+
+
+
