@@ -47,3 +47,45 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+$(function(){
+
+    // 画面遷移
+    $('#go_home').click(function(){
+        location.href="./index.html";
+    });
+    $('#new_girlfriend').click(function(){
+        location.href="./new_gf.html";
+    });
+    $('#entry_new_target').click(function(){
+
+    });
+
+    $('#gf_name').on('keydown', function(){
+        if ($('#gf_name').val().length > 0) {
+            if ($('#kakugo').get(0).checked) {
+                $('#entry_new_target').removeAttr('disabled');
+            }
+        } else {
+            $('#entry_new_target').attr('disabled', 'disabled');
+        }
+    });
+
+    $('#kakugo').on('change', function(){
+        if ($('#kakugo').get(0).checked) {
+            if ($('#gf_name').val().length > 0) {
+                $('#entry_new_target').removeAttr('disabled');
+            }
+        } else {
+            $('#entry_new_target').attr('disabled', 'disabled');
+        }
+        
+    });
+
+});
+
+
+
+
+
+
